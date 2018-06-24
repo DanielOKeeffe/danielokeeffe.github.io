@@ -1,92 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Daniel O'Keeffe</title>
 	<link href="styles.css" rel="stylesheet">
-	<title>Daniel O'Keeffe's Github Projects</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="grid-container">
-		<div class="grid-item header">
-			<h1>Welcome to my page!</h1>
-			<nav>
-				<ul>
-					<li><a href="#aboutMe">About me</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#projects">Projects</a></li>
-				</ul>
-			</nav>
+
+		<div class="grid-item info">
+			<h1>Daniel O'Keeffe</h1>
+			<h2>Junior Software Developer</h2>
 		</div>
 
-		<section id="aboutMe" class="grid-item about">
-			<h2>If I could talk about myself for a moment...</h2>
+		<nav class="grid-item nav">
+			<ul>
+				<li><a href="#aboutMe">About me</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#projects">Projects</a></li>
+			</ul>
+		</nav>
 
-			<p>I am a Buffalo, NY native currently working in the Information Technology field and expanding my technical skillset in WeCanCodeIT's full stack web development course. I am learning Java, HTML, CSS, JavaScript, and Spring MVC to build dynamic content.</p>
+		<section id="aboutMe" class="grid-item contact">
+			<img class="headshot" src="./images/headshot.jpg">
 
-			<div id="contact" class="grid-item contact">
-				<img class="headshot" src="./images/headshot.jpg">
-				<h2>Contact information</h2>
-				<div class="contact">
-					<div>Phone: <a href="tel:1-412-400-8546">1-412-400-8546</a></div>
-					<div>Email: <a href="mailto:daniel.p.okeeffe@gmail.com?Subject=Visit%20to%20your%20website">daniel.p.okeeffe@gmail.com</a></div>
-				</div>
-			</div>
+			<h2>Contact information</h2>
 
-			<div class="grid-item social">
-				<h2>Networking</h2>
-				<div><a href="www.linkedin.com/in/daniel-okeeffe">LinkedIn</a></div>
-				<div><a href="https://github.com/danielokeeffe">GitHub</a></div>
-			</div>
-
-			<div class="grid-item skills">
-				<h2>Skills list</h2>
-				<ul>
-					<li>Java</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>Sprint MVC</li>
-				</ul>
+			<div class="contact">
+				<div>Phone: <a href="tel:1-412-400-8546">1-412-400-8546</a></div>
+				<div>Email: <a href="mailto:daniel.p.okeeffe@gmail.com?Subject=Visit%20to%20your%20website">daniel.p.okeeffe@gmail.com</a></div>
 			</div>
 		</section>
 
-		<section id="projects" class="grid-item projects">
+		<div class="grid-item skillsNetworking">
+			<h2>Skills list</h2>
+			<ul>
+				<li>Java</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>Sprint MVC</li>
+			</ul>
+
+			<h2>Professional Networking</h2>
+			<div><a href="https://www.linkedin.com/in/daniel-okeeffe">LinkedIn</a></div>
+			<div><a href="https://github.com/danielokeeffe">GitHub</a></div>
+		</div>
+
+		<section class="grid-item bio">
+			<h2>If I could talk about myself for a moment...</h2>
+
+			<p>I am a Buffalo, NY native currently working in the Information Technology field and expanding my technical skillset in WeCanCodeIT's full stack web development course. I am learning Java, HTML, CSS, JavaScript, and Spring MVC to build dynamic content.</p>
+			<p>I hope you enjoy my portfolio and I would love the opportunity to speak about how I can help meet your development needs.</p>
+		</section>
+
+		<div id="projects" class="grid-item projects">
 			<h2>Projects</h2>
-			<article class="grid-item vpshelter">
-				<h3><a href="https://github.com/DanielOKeeffe/virtual-pet-shelter">Virtual Pet Shelter</a></h3>
-				<img src="./images/VirtualPetShelter.jpg">
-				<div>Skills Used:
-					<ul>
-						<li>Java</li>
-						<li>Eclipse IDE</li>
-						<li>Test Driven Development</li>
-					</ul>
-				</div>
-			</article>
+		</div>
 
-			<article class="grid-item vpamok">
-				<h3><a href="https://github.com/DanielOKeeffe/virtual-pets-amok">Virtual Pets Amok</a></h3>
-				<img src="./images/VirtualPetsAmok.jpg">
-				<div>Skills Used:
-					<ul>
-						<li>Java</li>
-						<li>Eclipse IDE</li>
-						<li>Test Driven Development</li>
-					</ul>
-				</div>
-			</article>
+		<article class="grid-item vpshelter">
+			<h3><a href="https://github.com/DanielOKeeffe/virtual-pet-shelter">Virtual Pet Shelter</a></h3>
+			<img src="./images/VirtualPetShelter.jpg">
+			<div>
+				<h3>Skills Used:</h3>
+				<ul>
+					<li>Java</li>
+					<li>Eclipse IDE</li>
+					<li>Test Driven Development</li>
+				</ul>
+			</div>
+		</article>
 
-			<article class="grid-item reviews">
-				<h3><a href="https://github.com/DanielOKeeffe/reviews">Reviews Site</a></h3>
-				<img src="./images/Reviews.jpg">
-				<div>Skills Used:
-					<ul>
-						<li>Java</li>
-						<li>Eclipse IDE</li>
-						<li>Thymeleaf</li>
-						<li>Spring MVC</li>
-					</ul>
-				</div>
-			</article>
+		<article class="grid-item vpamok">
+			<h3><a href="https://github.com/DanielOKeeffe/virtual-pets-amok">Virtual Pets Amok</a></h3>
+			<img src="./images/VirtualPetsAmok.jpg">
+			<div>
+				<h3>Skills Used:</h3>
+				<ul>
+					<li>Java</li>
+					<li>Eclipse IDE</li>
+					<li>Test Driven Development</li>
+				</ul>
+			</div>
+		</article>
+
+		<article class="grid-item reviews">
+			<h3><a href="https://github.com/DanielOKeeffe/reviews">Reviews Site</a></h3>
+			<img src="./images/Reviews.jpg">
+			<div>
+				<h3>Skills Used:</h3>
+				<ul>
+					<li>Java</li>
+					<li>Eclipse IDE</li>
+					<li>Thymeleaf</li>
+					<li>Spring MVC</li>
+				</ul>
+			</div>
+		</article>
+
+		<footer class="grid-item footer">
+			<div>&copy 2018, Daniel O'Keeffe.</div>
+			<div class="social">
+				<a href="mailto:daniel.p.okeeffe@gmail.com?Subject=Visit%20to%20your%20website" class="fa fa-envelope"></a>
+				<a href="https://www.linkedin.com/in/daniel-okeeffe" class="fa fa-linkedin"></a>
+				<a href="https://github.com/danielokeeffe" class="fa fa-github"></a>
+			</div>
+		</footer>
+
+	</div>
 
 
 </body>

@@ -1,46 +1,90 @@
 .grid-container {
 	display: grid;
-	background-color: #80ced6;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: 2rem auto;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto auto auto 120px;
+	background-color: #618685;
 	padding: 10px;
+	max-width: 1800px;
 	width: 90%;
+	margin: 2rem auto;
 }
 
 .grid-item {
+	display: flex;
 	align-items: center;
 	background-color: #618685;
-	border: 2px solid #000;
-	justify-content: center;
-	padding: 1em;
-	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 15px;
 }
 
-.header {
+.info {
 	display: flex;
-	grid-column: 1/-1;
+	align-items: flex-start;
+	flex-direction: column;
+	grid-column: 1/3;
 }
 
-.about {
-	display: grid;
-	grid-column: 1/-1;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 200px 400px;
+.nav {
+	display: flex;
+	justify-content: start;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
 }
 
 .headshot {
 	width: 200px;
 }
 
-.projectsHeader {
-	grid-column: 1/-1;
+.skillsNetworking {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.bio {
+	display: flex;
+	flex-direction: column;
 }
 
 .projects {
 	display: flex;
 	grid-column: 1/-1;
+	justify-content: center;
+}
+
+article img {
+	max-width: 100%;
+}
+
+.vpshelter {
+	display: flex;
+	flex-direction: column;
+}
+
+.vpamok {
+	display: flex;
+	flex-direction: column;
+}
+
+.reviews {
+	display: flex;
+	flex-direction: column;
+}
+
+.reviews div {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
 }
 
 .footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	grid-column: 1/-1;
 }
+
